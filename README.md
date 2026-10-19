@@ -35,3 +35,9 @@ Edit project repository URLs in the `projects` records in `dist/app.js`. Add cre
 The website retains pending repository slots and distinguishes stated career totals from individually documented results. See `CONTENT-NOTES.md` before adding or changing claims.
 
 The KINESIS video production workspace is a separate project and is not part of this website source. The website currently does not embed that video.
+
+## Vercel
+
+The root-level `vercel.json` publishes `dist/` directly without a framework, installation, or build step. Import this repository with **Root Directory** left at the repository root (`.`). Do not set Root Directory to `dist`, because the configuration already selects that output directory.
+
+After changes reach `main`, use the deployment created from the latest commit. If automatic deployments are disabled, redeploy from Vercel's Deployments tab. Older deployment-specific URLs continue to point to older deployments.
